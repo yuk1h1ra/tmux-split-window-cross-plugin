@@ -1,6 +1,6 @@
 # tmux-split-window-cross-plugin
 
-A tmux plugin to split panes in a specific layout using "prefix + +".
+A tmux plugin to split panes in a specific layout using "<kbd>prefix</kbd> + <kbd>+</kbd>".
 
 ## Installation
 
