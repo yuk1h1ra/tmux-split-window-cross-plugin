@@ -1,5 +1,4 @@
-# プラグインのスクリプトを実行可能にする
-set -g @split-window-cross-script-path "#{plugin_path}/scripts/split-panes.sh"
+#!/usr/bin/env bash
 
-# "prefix + +" にスクリプトをバインド
-bind + run-shell "$(@split-window-cross-script-path)"
+CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+tmux bind-key + run-shell "$CURRENT_DIR/scripts/split-window-cross.sh"
